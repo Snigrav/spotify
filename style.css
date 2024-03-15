@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Victor+Mono:wght@200;500&display=swap');
+body{
+    background-color: rgb(215, 186, 150);
+    font-family: "Roboto", sans-serif;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+.header{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+ li{
+    margin:0 5px;
+    padding:0 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/*NOW WE WILL CREATE PLAYLIST OF SONG*/
+
+.container{
+min-height: 70vh;
+
+color:white;
+display: flex;
+
+margin: 20px auto;
+width: 70%;
+
+
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#progressbar{
+    width: 75vw;
+    cursor: pointer;
+}
+.icons{
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.songitem{
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+ 
+    align-items: center;
+    justify-content: space-between;
+   
+    margin: 5px 10px;
+}
+.songitem img{
+    margin: 0 23 0; border-radius: 12px;
+    
+}
+.songduration{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    bottom: 10px;
+}
+.songinfo img{
+  transition: 1s ease-in;
+}
+@media only screen and (max-width: 910px) {
+    body {
+        background: url('gausnig.jpg');
+    }
+  }
+  @media only screen and (min-width: 910px) and (max-width:2000px) {
+    body {
+        background: url('gausnig3.jpg');
+    }
+  }
